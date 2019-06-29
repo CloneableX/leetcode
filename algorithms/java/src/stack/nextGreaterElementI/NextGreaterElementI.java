@@ -7,6 +7,8 @@ import java.util.Stack;
 /**
  * stack.nextGreaterElementI.NextGreaterElementI
  *
+ * problems link https://leetcode.com/problems/next-greater-element-i/
+ *
  * @author Cloneable
  * @date 2019/6/22 20:47:22
  * @description
