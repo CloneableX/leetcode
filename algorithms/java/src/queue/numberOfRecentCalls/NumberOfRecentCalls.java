@@ -29,7 +29,7 @@ public class NumberOfRecentCalls {
 
     public int pingByArray(int t) {
         array.add(t);
-        int targetIndex = searchLastLetter(array, t - 3000);
+        int targetIndex = searchLastLess(array, t - 3000);
         if(targetIndex >= 0) {
             startIndex = targetIndex + 1;
         }
@@ -37,7 +37,7 @@ public class NumberOfRecentCalls {
         return  array.size() - startIndex;
     }
 
-    private int searchLastLetter(List<Integer> array, int target) {
+    private int searchLastLess(List<Integer> array, int target) {
         if(array == null || array.size() < 1) {
             return -1;
         }
