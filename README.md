@@ -5,6 +5,7 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |496|[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|[Java](https://github.com/CloneableX/leetcode/tree/master/algorithms/java/src/stack/nextGreaterElementI)|Easy|
+|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Java](https://github.com/CloneableX/leetcode/tree/master/algorithms/java/src/sort/validAnagram)|Easy|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Java](https://github.com/CloneableX/leetcode/tree/master/algorithms/java/src/stack/backspaceStringCompare)|Easy|
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|[Java](https://github.com/CloneableX/leetcode/tree/master/algorithms/java/src/queue/numberOfRecentCalls)|Easy|
 |1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[Java](https://github.com/CloneableX/leetcode/tree/master/algorithms/java/src/stack/removeAllAdjacentDuplicatesInString)|Easy|
