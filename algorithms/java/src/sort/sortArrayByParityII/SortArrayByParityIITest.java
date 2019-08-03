@@ -15,24 +15,28 @@ import java.util.Arrays;
 public class SortArrayByParityIITest {
     @Test
     public void sortArrayByParityIITest() {
-        int[] A = new int[]{4,2,5,7};
+        int[] A = new int[]{3,1,4,2};
         int[] result = SortArrayByParityII.sortArrayByParityII(A);
 
-        int[][] expected = new int[][]{
-                {4,5,2,7},
-                {4,7,2,5},
-                {2,5,4,7},
-                {2,7,4,5}
-        };
+        Assert.assertTrue(isParityArray(result));
+    }
 
-        boolean expectedResult = false;
-        for(int i = 0; i < expected.length; i++) {
-            if(Arrays.equals(expected[i], result)) {
-                expectedResult = true;
+    @Test
+    public void sortArrayInPlaceByParityIITest() {
+        int[] A = new int[]{3,1,4,2};
+        int[] result = SortArrayByParityII.sortArrayInPlaceByParityII(A);
+
+        Assert.assertTrue(isParityArray(result));
+    }
+
+    private boolean isParityArray(int[] result) {
+        boolean expectedResult = true;
+        for(int i = 0; i < result.length; i++) {
+            if(i % 2 != result[i] % 2) {
+                expectedResult = false;
                 break;
             }
         }
-
-        Assert.assertTrue(expectedResult);
+        return expectedResult;
     }
 }

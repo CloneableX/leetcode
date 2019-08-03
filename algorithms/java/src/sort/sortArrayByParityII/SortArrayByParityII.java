@@ -9,23 +9,28 @@ package sort.sortArrayByParityII;
  */
 public class SortArrayByParityII {
     public static int[] sortArrayByParityII(int[] A) {
+        int[] result = new int[A.length];
         for(int i = 0, oddIndex = 1, evenIndex = 0; i < A.length; i++) {
-            if(isOdd(i)) {
-                if(!isOdd(A[i])) {
-                    swapArray(A, i, evenIndex);
-                    evenIndex += 2;
-                    i--;
-                } else if(i == oddIndex) {
+            if(A[i] % 2 == 0) {
+                result[evenIndex] = A[i];
+                evenIndex += 2;
+            } else {
+                result[oddIndex] = A[i];
+                oddIndex += 2;
+            }
+        }
+
+        return result;
+    }
+
+    public static int[] sortArrayInPlaceByParityII(int[] A) {
+        for(int oddIndex = 1, evenIndex = 0; evenIndex < A.length - 1; evenIndex += 2) {
+            if(A[evenIndex] % 2 == 1) {
+                while(A[oddIndex] % 2 == 1) {
                     oddIndex += 2;
                 }
-            } else if(!isOdd(i)) {
-                if(isOdd(A[i])) {
-                    swapArray(A, i, oddIndex);
-                    oddIndex += 2;
-                    i--;
-                } else if(i == evenIndex) {
-                    evenIndex += 2;
-                }
+
+                swapArray(A, oddIndex, evenIndex);
             }
         }
 
@@ -36,9 +41,5 @@ public class SortArrayByParityII {
         int temp = A[i];
         A[i] = A[swapIndex];
         A[swapIndex] = temp;
-    }
-
-    private static boolean isOdd(int val) {
-        return val % 2 == 1;
     }
 }
