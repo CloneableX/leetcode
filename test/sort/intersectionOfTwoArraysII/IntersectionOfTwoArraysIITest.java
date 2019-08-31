@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * sort.intersectionOfTwoArraysII.IntersectionOfTwoArraysIITest
+ * sort.sort.intersectionOfTwoArraysII.IntersectionOfTwoArraysIITest
  *
  * @author Cloneable
  * @date 2019/7/27 21:10:27
@@ -13,7 +13,7 @@ import org.junit.Test;
 public class IntersectionOfTwoArraysIITest {
     @Test
     public void intersectionTest() {
-        int[] result = IntersectionOfTwoArraysII.intersection(new int[]{1,2,2,1}, new int[]{2,2});
+        int[] result = sort.intersectionOfTwoArraysII.IntersectionOfTwoArraysII.intersection(new int[]{1,2,2,1}, new int[]{2,2});
 
         Assert.assertArrayEquals(new int[]{2,2}, result);
     }

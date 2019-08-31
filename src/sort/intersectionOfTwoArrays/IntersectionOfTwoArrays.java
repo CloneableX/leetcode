@@ -3,7 +3,7 @@ package sort.intersectionOfTwoArrays;
 import java.util.*;
 
 /**
- * sort.intersectionOfTwoArrays.IntersectionOfTwoArrays
+ * sort.sort.intersectionOfTwoArrays.IntersectionOfTwoArrays
  *
  * @author Cloneable
  * @date 2019/7/21 13:00:21

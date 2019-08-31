@@ -3,10 +3,8 @@ package sort.sortArrayByParityII;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 /**
- * sort.sortArrayByParityII.SortArrayByParityIITest
+ * sort.SortArrayByParityIITest
  *
  * @author Cloneable
  * @date 2019/8/1 08:41:01
@@ -16,7 +14,7 @@ public class SortArrayByParityIITest {
     @Test
     public void sortArrayByParityIITest() {
         int[] A = new int[]{3,1,4,2};
-        int[] result = SortArrayByParityII.sortArrayByParityII(A);
+        int[] result = sort.sortArrayByParityII.SortArrayByParityII.sortArrayByParityII(A);
 
         Assert.assertTrue(isParityArray(result));
     }

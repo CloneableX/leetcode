@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * queue.numberOfRecentCalls.NumberOfRecentCalls
+ * queue.NumberOfRecentCalls
  *
  * @author Cloneable
  * @date 2019/7/4 08:31:04

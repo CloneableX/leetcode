@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * queue.numberOfRecentCalls.NumberOfRecentCalls
+ * queue.NumberOfRecentCalls
  *
  * @author Cloneable
  * @date 2019/7/4 08:31:04

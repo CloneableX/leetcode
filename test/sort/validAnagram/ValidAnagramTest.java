@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * sort.validAnagram.ValidAnagramTest
+ * sort.ValidAnagramTest
  *
  * @author Cloneable
  * @date 2019/7/20 08:37:20
@@ -14,7 +14,7 @@ public class ValidAnagramTest {
     @Test
     public void isAnagramTest() {
         String s = "anagram", t = "nagaram";
-        boolean result = ValidAnagram.isAnagram(s, t);
+        boolean result = sort.validAnagram.ValidAnagram.isAnagram(s, t);
 
         Assert.assertTrue(result);
     }
