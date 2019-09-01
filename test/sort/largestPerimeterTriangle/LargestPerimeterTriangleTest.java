@@ -72,7 +72,7 @@ public class LargestPerimeterTriangleTest {
     @Test
     public void largestPerimeterIsortTest01() {
         int[] A = new int[]{2,1,2};
-        int maxPerimeter = sort.largestPerimeterTriangle.LargestPerimeterTriangle.largestPerimeterIsort(A);
+        int maxPerimeter = sort.largestPerimeterTriangle.LargestPerimeterTriangle.largestPerimeterChooseSort(A);
 
         Assert.assertEquals(5, maxPerimeter);
     }
@@ -80,7 +80,7 @@ public class LargestPerimeterTriangleTest {
     @Test
     public void largestPerimeterIsortTest02() {
         int[] A = new int[]{1,2,1};
-        int maxPerimeter = sort.largestPerimeterTriangle.LargestPerimeterTriangle.largestPerimeterIsort(A);
+        int maxPerimeter = sort.largestPerimeterTriangle.LargestPerimeterTriangle.largestPerimeterChooseSort(A);
 
         Assert.assertEquals(0, maxPerimeter);
     }
@@ -88,7 +88,7 @@ public class LargestPerimeterTriangleTest {
     @Test
     public void largestPerimeterIsortTest03() {
         int[] A = new int[]{3,2,3,4};
-        int maxPerimeter = sort.largestPerimeterTriangle.LargestPerimeterTriangle.largestPerimeterIsort(A);
+        int maxPerimeter = sort.largestPerimeterTriangle.LargestPerimeterTriangle.largestPerimeterChooseSort(A);
 
         Assert.assertEquals(10, maxPerimeter);
     }
@@ -96,7 +96,7 @@ public class LargestPerimeterTriangleTest {
     @Test
     public void largestPerimeterIsortTest04() {
         int[] A = new int[]{3,6,2,3};
-        int maxPerimeter = LargestPerimeterTriangle.largestPerimeterIsort(A);
+        int maxPerimeter = LargestPerimeterTriangle.largestPerimeterChooseSort(A);
 
         Assert.assertEquals(8, maxPerimeter);
     }

@@ -25,8 +25,8 @@ public class LargestPerimeterTriangle {
         return 0;
     }
 
-    // by insert sort
-    public static int largestPerimeterIsort(int[] A) {
+    // by choose sort
+    public static int largestPerimeterChooseSort(int[] A) {
         int[] T = new int[TRIANGLE_ARRAY_LEN];
         int k = 0;
         for (int i = 0; i < A.length; i++) {

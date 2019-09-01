@@ -30,7 +30,7 @@ public class MatrixCellsinDistanceOrderTest {
     @Test
     public void should_get_sorted_every_points_by_distance_when_give_matrix_row_and_col_nums_and_base_point() {
         assertThat(
-                matrixCellsinDistanceOrder.getAllDistance(2, 2, new int[]{1, 1}),
+                matrixCellsinDistanceOrder.orderMatrixByDistance(2, 2, 1, 1),
                 is(new int[][]{{1, 1}, {0, 1}, {1, 0}, {0, 0}})
         );
     }

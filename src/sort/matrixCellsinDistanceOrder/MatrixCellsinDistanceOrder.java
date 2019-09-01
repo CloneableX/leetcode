@@ -18,7 +18,8 @@ public class MatrixCellsinDistanceOrder {
         return Math.abs(pointA[i] - pointB[i]);
     }
 
-    public int[][] getAllDistance(int row, int col, int[] basePoint) {
+    public int[][] orderMatrixByDistance(int row, int col, int x, int y) {
+        int[] basePoint = new int[]{x, y};
         LinkedList<Point>[] distances = new LinkedList[row * col];
         for (int i = 0; i < distances.length; i++) {
             distances[i] = new LinkedList();
