@@ -14,3 +14,4 @@
 |976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)|[Java](https://github.com/CloneableX/leetcode/tree/master/src/sort/largestPerimeterTriangle)|Easy|
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/)|[Java](https://github.com/CloneableX/leetcode/tree/master/src/sort/matrixCellsinDistanceOrder)|Easy|
 |1047|[Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|[Java](https://github.com/CloneableX/leetcode/tree/master/src/stack/removeAllAdjacentDuplicatesInString)|Easy|
+|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|[Java](https://github.com/CloneableX/leetcode/tree/master/src/sort/relativeSortArray)|Easy|

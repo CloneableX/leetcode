@@ -14,8 +14,9 @@ import java.util.Map;
 public class RelativeSortArray {
     public static int[] relativeSort(int[] array, int[] relative) {
         Map<Integer, Integer> relativeMap = generateRelativeMap(relative);
-        RelativeSortArray.filterRelativeArea(array, relativeMap);
-        RelativeSortArray.fillRelativeArray(array, relative, relativeMap);
+        int relativeIdx = filterRelativeArea(array, relativeMap);
+        notRelativeSort(array, relativeIdx);
+        fillRelativeArray(array, relative, relativeMap);
         return array;
     }
 
@@ -47,7 +48,10 @@ public class RelativeSortArray {
     }
 
     public static void notRelativeSort(int[] array, int relativeIdx) {
-        Arrays.sort(array, relativeIdx, array.length - 1);
+        if (relativeIdx > array.length) {
+            return;
+        }
+        Arrays.sort(array, relativeIdx, array.length);
     }
 
     public static void fillRelativeArray(int[] array, int[] relative, Map<Integer, Integer> relativeMap) {

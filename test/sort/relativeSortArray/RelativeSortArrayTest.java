@@ -23,8 +23,10 @@ public class RelativeSortArrayTest {
 
     @Before
     public void setUp() {
-        array = new int[]{2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19};
+        array = new int[]{2, 3, 1, 3, 2, 4, 6, 19, 9, 2, 7};
         relative = new int[]{2, 1, 4, 3, 9, 6};
+        //array = new int[]{28,6,22,8,44,17};
+        //relative = new int[]{22,28,8,6};
         relativeMap = RelativeSortArray.generateRelativeMap(relative);
     }
 
@@ -73,7 +75,8 @@ public class RelativeSortArrayTest {
 
     @Test
     public void should_fill_relative_area_of_array_by_relative_num_when_give_array_and_relative_map() {
-        RelativeSortArray.filterRelativeArea(array, relativeMap);
+        int relativeIdx = RelativeSortArray.filterRelativeArea(array, relativeMap);
+        RelativeSortArray.notRelativeSort(array, relativeIdx);
         RelativeSortArray.fillRelativeArray(array, relative, relativeMap);
         assertThat(array, is(new int[]{2, 2, 2, 1, 4, 3, 3, 9, 6, 7, 19}));
     }
